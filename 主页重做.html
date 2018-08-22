@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN" >
+
+<head>
+
+<meta charset="utf-8">
+
+<title>主页重做</title>
+
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+
+<script src="js/jquery-1.8.3.min.js"></script>
+
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+
+<script src="js/jquery.fullPage.min.js"></script>
+	
+	<script type="text/javascript">
+
+		//$(".Messagecontent").mouseout(function(){
+		//	$(this).children("span").css("background","url(img/common_bg.gif) -197px 0px no-repeat");
+		//})
+	</script>
+	
+<link rel="stylesheet" href="css/styles.css">
+	
+<link rel="stylesheet" href="css/leftpage.css">
+	
+<link rel="stylesheet" href="css/login.css">
+
+
+	
+<script>
+
+$(document).ready(function() {
+
+			$(".submit").click(function(){
+			$(".b").css("transform","translate(0px,-260px)");
+			$(".b").css("opacity","0");
+			$("h2").css("transform","translate(0px,130px)");
+			$("h2 span").css("opacity","1");
+			$("h2 span i").css("animation-play-state","running");
+			//window.setTimeout(function(){ location.href="https://www.baidu.com/";}, 5000);
+		});
+	
+	$.fn.fullpage({
+		'slidesColor': ['#1bbc9b', '#4BBFC3'],
+		'anchors': ['page1', 'page2'],
+		'afterLoad':function(anchorLink,index){
+			if(index==2){
+				$('.second-page').find('.second-page-left').delay(500).animate({
+					left:'0'
+				}, 1500, 'easeOutExpo'),
+				
+				$('.second-page').find('.second-page-right').delay(500).animate({
+					right:'0'
+				}, 1500, 'easeOutExpo'),
+					
+				$('.second-page').find('.second-page-main').fadeIn(1000);
+				$('.second-page').find('.second-page-top').fadeIn(500);
+			}
+		},
+		'onLeave':function(index,anchorLink){
+			if(index=='2'){
+				$('.second-page').find('.second-page-left').delay(500).animate({
+					left:'-120%'
+				}, 1500, 'easeOutExpo'),
+				
+				$('.second-page').find('.second-page-right').delay(500).animate({
+					right:'-120%'
+				}, 1500, 'easeOutExpo'),
+					
+				$('.second-page').find('.second-page-main').fadeOut(1000);
+				$('.second-page').find('.second-page-top').fadeOut(500);				
+			}
+		}
+		
+		
+
+	})	;
+
+});
+
+</script>
+</head>
+<body>
+	<div class="page-all">
+	   <div class="section first-page"> 
+		   <div class=" first-page-words">
+		   		<h>哈尔滨工程大学保密科技实验室</h>
+		   </div>
+		   <div class="first-page-welcome"> 
+		   		<p>下滑了解更多</p>
+		   </div>
+	   </div>
+		
+		<div class="section second-page">
+		
+			
+			
+			
+			<div class="second-page-top">
+					<div class="second-page-top-infor">
+						<p>哈尔滨工程大学保密科技实验室</p>
+							<hr>
+					</div>
+			</div>
+			<div class="second-page-main-bottom">			
+				<div class="second-page-left">
+					<div class="all">
+        		<div class="box">
+            		<a href="#">
+						<div class="card bg-01"><span class="card-content">实验室管理</span>
+						</div>            </a>
+        		</div>
+				
+        		<div class="box">
+     		       <a href="#"> 
+					   <div class="card bg-02"><span class="card-content">实验室人员</span>
+					   </div>            </a>
+     		   </div>
+     		   <div class="box">
+     		       <a href="#">  
+					   <div class="card bg-03"><span class="card-content">实验室项目</span>
+					   </div>            </a>
+     		   </div>
+     		   <div class="box">
+     		       <a href="#"> 
+					   <div class="card bg-04"><span class="card-content">实验室成就</span>
+					   </div>            </a>
+     		   </div>
+     		   <div class="box">
+     		       <a href="#">  
+					   <div class="card bg-05"><span class="card-content">实验室制度</span>
+					   </div>            </a>
+     		   </div>
+     		   <div class="box">
+     		       <a href="#"> 
+					   <div class="card bg-06"><span class="card-content">实验室招新</span>
+					   </div>            </a>
+     		   </div>
+     		     </div>
+					
+				</div>
+				<div class="second-page-main">
+					<p>主要</p>
+				</div>
+				<div class="second-page-right">
+					
+					<p>用户登录</p>
+					
+						<div class="a">
+
+							</div>
+							<div class="v">
+									<h2>Welcome<span><i>·</i><i>·</i><i class="i">·</i></span></h2>
+								<div class="b" id="b">
+									<input type="text" class="input" placeholder="Username" />
+									<br/>
+									<input type="password"  class="input" placeholder="Password" />
+									<div class="submit">Login</div>
+								</div>
+							</div>
+										</div>
+									</div>
+	
+		</div>
+	</div>
+	
+
+</body>
+</html>
