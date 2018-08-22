@@ -45,6 +45,7 @@
 	50%{opacity:0;}
 }
 .b{
+	transition:1.5s;
 	width:100%;
 	height:200px;
 	margin:0 auto;
