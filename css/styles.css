@@ -75,7 +75,7 @@ html{
 .second-page-left{
 	
 	position: relative;
-	width: 15%;
+	width: 10%;
 	height: 100%;
 	float: left;
 	left:-120%;
@@ -91,10 +91,12 @@ html{
 	float: left;
 	position: relative;
 	height: 100%;
-	width: 65%;
+	width: 70%;
 	display: none;
 	
 }
+
+
 .second-page-main-bottom{
 	float: left;
 	width: 100%;
@@ -105,24 +107,81 @@ html{
 	
 }
 
+.second-page-main-left{
+	width: 50%;
+	float: left;
+	height: 100%;
+	
+	
+}
+
+.second-page-main-left hr{
+	height: 5px;
+	border:none;
+	border-top: 2px groove skyblue;
+    margin-right: 100px;
+}
+
+
+.second-page-main-right{
+	
+	width:50%;
+	float: left;
+	height:100%;
+	position: relative;
+	left: 3%;
+}
+
+.second-page-main-right table{
+	
+}
 .second-page-main-words{
 
 }
 
-.second-page-main-imgs{
-	
+.second-page-main hr{
+	height: 5px;
+	border:none;
+	border-top: 2px groove skyblue;
+    margin-right: 100px;
 	
 }
 
 .second-page-right{
 	float:left;
-
 	position: relative;
 	height: 100%;
 	width: 20%;
 	right: -120%
 }
-.second-page-right-border{
-	
+.second-page-right hr{
+	height: 5px;
+	border:none;
+	border-top: 2px groove skyblue;
 }
 
+.news-first{
+	border-style:hidden dashed hidden hidden;
+    border-right-color:grey;
+	border-left-style: hidden;
+}
+.news-first img{
+	width: 90%;
+	height: auto;
+	margin:10px;
+}
+
+.news-words-first{
+	width:98%;
+	text-indent: 2em;
+}
+.news-words-first a{
+	font: "SimSun";
+}
+
+.news-text{
+	font-size: 13px;
+	position: relative;
+	margin-right: 100px;
+	text-indent: 2em;
+}
