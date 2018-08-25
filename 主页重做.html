@@ -34,6 +34,19 @@ $(document).ready(function() {
 				//window.setTimeout(function(){ location.href="https://www.baidu.com/";}, 5000);
 			});
 	
+			$(".extra-information").mouseover(function(){
+					$("#first-pic,#second-pic").find("img").fadeTo(100,0.2);	
+					$("#first-pic").addClass("change-first");
+					$("#second-pic").addClass("change-second");
+				
+			});
+			$(".extra-information").mouseout(function(){
+					$("#first-pic,#second-pic").find("img").fadeTo(1000,1.0);
+					$("#first-pic").removeClass("change-first");
+					$("#second-pic").removeClass("change-second");
+				
+			})
+	
 	$.fn.fullpage({
 		'slidesColor': ['#1bbc9b', '#4BBFC3'],
 		'anchors': ['page1', 'page2'],
@@ -80,9 +93,6 @@ $(document).ready(function() {
 		   <div class=" first-page-words">
 		   		<h>哈尔滨工程大学保密科技实验室</h>
 		   </div>
-		   <div class="first-page-welcome"> 
-		   		<p>下滑了解更多</p>
-		   </div>
 	   </div>
 		
 		<div class="section second-page">
@@ -96,7 +106,7 @@ $(document).ready(function() {
 							<hr>
 					</div>
 			</div>
-			<div class="second-page-main-bottom">			
+			<div class="second-page-bottom">			
 				<div class="second-page-left">
 					<div class="all">
         		<div class="box">
@@ -175,10 +185,22 @@ $(document).ready(function() {
 								<td>
 									<a href="#">新闻标题</a><br>
 									<div class="news-text" id="text4">新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</div>
-									
+									<hr>
 								</td>
 							</tr>
 						</table>
+						<div class="extra-information">
+							<table>
+								<tr>
+									<td  id="first-pic"><a href="#"><img src="img/03.png" alt=""></a>
+										
+									</td>
+									<td  id="second-pic"><a href="#" ><img src="img/03.png" alt=""></a>
+										
+									</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="second-page-right">

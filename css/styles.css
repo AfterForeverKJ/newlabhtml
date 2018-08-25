@@ -10,22 +10,19 @@ html{
 .first-page{
 	background: url(../img/room.JPEG) no-repeat;
 	background-size: 100% 100%;
-	height: 100%
+	height: 100%;
+	text-shadow: -3px 6px 6px white;
 	
 }
 
 .first-page-words{
 	text-align:center;
-	font: 50px "Microsoft Yahei";
-	color: black;
+	font:50px "STXingkai";
+	color:#0F2E6D;
 	position: relative;
 	bottom: 13%;
 }
 
-.first-page-welcome{
-	text-align: center;
-	
-}
 
 .second-page{
 	position: relative;
@@ -49,7 +46,6 @@ html{
 .second-page-top-infor
 {
 	text-align: center;
-	font: 50px "Microsoft Yahei";
 	text-shadow: 5px 5px 5px #ffffff;
 	position: relative;
 	height: 100%;
@@ -60,6 +56,8 @@ html{
 	width:100%;
 	text-align: center;
 	margin: 30px;
+	font:50px "STXingkai";
+	color:#0F2E6D;
 	
 }
 
@@ -82,28 +80,26 @@ html{
 	
 	
 	
-}
-.second-page-left-border{
+	
 	
 }
 
 .second-page-main{
 	float: left;
 	position: relative;
-	height: 100%;
+	height: 90%;
 	width: 70%;
 	display: none;
 	
 }
 
 
-.second-page-main-bottom{
+.second-page-bottom{
 	float: left;
 	width: 100%;
 	height: 100%;
 	position: relative;
 	top: 200px;
-	
 	
 }
 
@@ -111,7 +107,8 @@ html{
 	width: 50%;
 	float: left;
 	height: 100%;
-	
+
+
 	
 }
 
@@ -133,7 +130,8 @@ html{
 }
 
 .second-page-main-right table{
-	
+	font:"Microsoft YaHei";
+	overflow: auto;
 }
 .second-page-main-words{
 
@@ -161,7 +159,7 @@ html{
 }
 
 .news-first{
-	border-style:hidden dashed hidden hidden;
+	border-style:hidden solid hidden hidden;
     border-right-color:grey;
 	border-left-style: hidden;
 }
@@ -184,4 +182,38 @@ html{
 	position: relative;
 	margin-right: 100px;
 	text-indent: 2em;
+}
+
+.extra-information{
+	
+	width: 100%;
+	margin: 0 0 1em;
+}
+
+.extra-information table{
+	width:90%;
+}
+
+.extra-information img{
+	height: 30%;
+	
+	
+}
+
+#first-pic,#second-pic{
+	text-align: left;
+}
+
+
+.change-first{
+	background-image: url(../img/whiteback.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.change-second{
+	background-image: url(../img/whitebacksec.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
 }
