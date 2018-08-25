@@ -34,13 +34,13 @@ $(document).ready(function() {
 				//window.setTimeout(function(){ location.href="https://www.baidu.com/";}, 5000);
 			});
 	
-			$(".extra-information").mouseover(function(){
+			$(".extra-information").mouseenter(function(){
 					$("#first-pic,#second-pic").find("img").fadeTo(100,0.2);	
 					$("#first-pic").addClass("change-first");
 					$("#second-pic").addClass("change-second");
 				
 			});
-			$(".extra-information").mouseout(function(){
+			$(".extra-information").mouseleave(function(){
 					$("#first-pic,#second-pic").find("img").fadeTo(1000,1.0);
 					$("#first-pic").removeClass("change-first");
 					$("#second-pic").removeClass("change-second");
@@ -91,7 +91,8 @@ $(document).ready(function() {
 	<div class="page-all">
 	   <div class="section first-page"> 
 		   <div class=" first-page-words">
-		   		<h>哈尔滨工程大学保密科技实验室</h>
+		   		<h>中科院信工所·哈工程<br>保密科技联合实验室
+</h>
 		   </div>
 	   </div>
 		
@@ -102,7 +103,8 @@ $(document).ready(function() {
 			
 			<div class="second-page-top">
 					<div class="second-page-top-infor">
-						<p>哈尔滨工程大学保密科技实验室</p>
+						<p>中科院信工所·哈工程保密科技联合实验室
+</p>
 							<hr>
 					</div>
 			</div>
